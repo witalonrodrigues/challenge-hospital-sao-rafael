@@ -53,7 +53,7 @@ Microserviço desenvolvido como entrega das **Sprints 3 e 4** para a disciplina 
     
 - **Servidor ASGI:** Uvicorn
     
-- **Visualização (Grafos):** Matplotlib & NetworkX (Thread-safe via `Agg` backend)
+- **Visualização (Grafos):** Matplotlib & NetworkX
     
 
 **Estrutura Modular do Projeto:**
@@ -63,14 +63,14 @@ A arquitetura foi refatorada seguindo boas práticas de separação de responsab
 Plaintext
 
 ```
-meu_projeto/
-├── main.py                  # Ponto de entrada (FastAPI, Rotas e Handlers)
+challenge-hospital-sao-rafael/
+├── main.py                  # Endpoints de API e tratamentos de excessão
 ├── schemas/
-│   └── models.py            # Contratos de entrada/saída (Pydantic)
+│   └── models.py            # Classes do projeto
 └── service/
     ├── algoritmo_sprint_3.py # Lógica de Recursão e DP
     ├── algoritmo_sprint_4.py # Modelagem do Grafo e Dijkstra
-    └── visualizacao.py       # Renderização de imagem PNG
+    └── visualizacao.py       # Renderização de imagem do grafo
 ```
 
 ---
